@@ -7,16 +7,14 @@
 	<meta name="Keywords" content="김혜련,Kimhyelyeon, 포트폴리오, 김혜련 포트폴리오, portfolio, Hyelyeon's portfolio"/>
 	<meta name="Description" content="김혜련의 포트폴리오 페이지 입니다"/>
 	<title>회원가입</title>
-	<link rel="stylesheet" href="../css/common.css"/>
-	<link rel="stylesheet" href="../css/member.css"/>
+	<link rel="stylesheet" href="../include/css/common.css"/>
+	<link rel="stylesheet" href="../include/css/member.css"/>
 	<link rel="stylesheet" href="../include/css/green_menu.css"/>
 	<link rel="stylesheet" href="css/layout_menu.css"/>
 	<link rel="icon" sizes="16x16" href="../include/images/green_pavi_ori.gif">
 	<script src="../include/js/jquery-1.9.0.min.js"></script> 
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/DB_springMove_fn.js"></script>	
-
 	<script src="../include/js/menuActive.js"></script>
 	<script src="../include/js/common.js"></script>
 	<script src="js/script.js"></script>
@@ -90,14 +88,14 @@
 		<?php include "../include/header.php";?>
 	</header>
 	<section>
-		<div id="main_content">
-			<div id="join_box">
+		<div id="mainContent">
+			<div id="joinBox">
 				<form name="member_form" method="post" action="member_insert.php">
 					<h2>회원가입</h2>
 					<div class="form id">
-						<div class="col1">아이디</div>
+						<div class="col1"><span class="mfIm">*</span>아이디</div>
 						<div class="col2">
-							<input type="text" name="id"/>
+							<input type="text" name="id" value="아이디를 입력해주세요."/>
 						</div>
 						<div class="col3">
 							<a href="#"><img src="../img/check_id.gif" onclick="check_id()"/></a>
@@ -106,38 +104,36 @@
 					<div class="clear"></div>
 					
 					<div class="form">
-						<div class="col1">비밀번호</div>
+						<div class="col1"><span class="mfIm">*</span>비밀번호</div>
 						<div class="col2">
-							<input type="password" name="pass"/>
+							<input type="password" name="pass" value="비밀번호를 입력해주세요."/>
 						</div>
 					</div>
 					<div class="clear"></div>
 					
 					<div class="form">
-						<div class="col1">비밀번호 확인</div>
+						<div class="col1"><span class="mfIm">*</span>비밀번호 확인</div>
 						<div class="col2">
-							<input type="password" name="pass_contirm"/>
+							<input type="password" name="pass_contirm" value="비밀번호 확인을 위하여 한번 더 입력해주세요."/>
 						</div>
 					</div>
 					<div class="clear"></div>
 					
 					<div class="form">
-						<div class="col1">이름</div>
+						<div class="col1"><span class="mfIm">*</span>이름</div>
 						<div class="col2">
-							<input type="text" name="name"/>
+							<input type="text" name="name" value="이름을 입력해주세요."/>
 						</div>
 					</div>
 					<div class="clear"></div>
 					
 					<div class="form">
-						<div class="col1">이메일</div>
+						<div class="col1"><span class="mfIm">*</span>이메일</div>
 						<div class="col2">
 							<input type="text" name="email1"/>@<input type="text" name="email2"/>
 						</div>
 					</div>
 					<div class="clear"></div>
-					
-					<div class="bottom_line"> </div>
 					<div class="buttons">
 						<img style="cursor:pointer" src="../img/button_save.gif" onclick="check_input()"/>&nbsp;
 						<img id="reset_button" style="cursor:pointer" src="../img/button_reset.gif" onclick="reset_form()"/>

@@ -42,56 +42,56 @@
 		<span class="index"></span>
 	</span>
 	<div class="quickMenu">
-		<h4 class="quickLogo"><a href="index.html"><img src="images/quickLogo.png" alt=""/></a></h4>
+		<h4 class="quickLogo"><a href="./index1.php"><img src="images/quickLogo.png" alt=""/></a></h4>
 		<ul class="nav">
-			<li><a href="sub04/index.html" class="">그린소개<span>▼</span></a>
+			<li><a href="../sub04/index.php" class="">그린소개<span>▼</span></a>
 				<ul class="sub">
-					<li><a href="sub04/index.html">기관소개</a></li>
-					<li><a href="sub04/index.html">기관연혁</a></li>
-					<li><a href="sub04/index.html">사업연혁</a></li>
-					<li><a href="sub04/index.html">언론보도 & 뉴스</a></li>
+					<li><a href="../sub04/index.php">기관소개</a></li>
+					<li><a href="../sub04/index.php">기관연혁</a></li>
+					<li><a href="../sub04/index.php">사업연혁</a></li>
+					<li><a href="../sub04/index.php">언론보도 & 뉴스</a></li>
 				</ul>
 			</li>
-			<li><a href="sub04/index.html">지점안내<span>▼</span></a>
+			<li><a href="../sub04/index.php">지점안내<span>▼</span></a>
 				<ul class="sub">
-					<li><a href="sub04/index.html">지점소개</a></li>
-					<li><a href="sub04/index.html">강사소개</a></li>
-					<li><a href="sub04/index.html">시설소개</a></li>
-					<li><a href="sub04/index.html">위치안내</a></li>
+					<li><a href="../sub04/index.php">지점소개</a></li>
+					<li><a href="../sub04/index.php">강사소개</a></li>
+					<li><a href="../sub04/index.php">시설소개</a></li>
+					<li><a href="../sub04/index.php">위치안내</a></li>
 				</ul>
 			</li>
-			<li><a href="sub04/index.html">커뮤니티<span>▼</span></a>
+			<li><a href="../sub04/index.php">커뮤니티<span>▼</span></a>
 				<ul class="sub">
-					<li><a href="sub04/index.html">공지사항</a></li>
-					<li><a href="sub04/index.html">그린채널</a></li>
-					<li><a href="sub04/index.html">그린매거진</a></li>
-					<li><a href="sub04/index.html">자격증정보</a></li>
+					<li><a href="../sub04/index.php">공지사항</a></li>
+					<li><a href="../sub04/index.php">그린채널</a></li>
+					<li><a href="../sub04/index.php">그린매거진</a></li>
+					<li><a href="../sub04/index.php">자격증정보</a></li>
 				</ul>
 			</li>
-			<li><a href="sub04/index.html">고객센터<span>▼</span></a>
+			<li><a href="../sub04/index.php">고객센터<span>▼</span></a>
 				<ul class="sub">
-					<li><a href="sub04/index.html">고객의소리</a></li>
-					<li><a href="sub04/index.html">장비/시설점검 요청</a></li>
-					<li><a href="sub04/index.html">온라인결제</a></li>
-					<li><a href="sub04/index.html">설문조사</a></li>
+					<li><a href="../sub04/index.php">고객의소리</a></li>
+					<li><a href="../sub04/index.php">장비/시설점검 요청</a></li>
+					<li><a href="../sub04/index.php">온라인결제</a></li>
+					<li><a href="../sub04/index.php">설문조사</a></li>
 				</ul>
 			</li>
 		</ul>
 		<ul class="quickIcon">
 			<li>
-				<a href="sub04/index.html"><img src="images/quickIcon1_off.png" alt=""/>그린채널</a>
+				<a href="../sub04/index.php"><img src="images/quickIcon1_off.png" alt=""/>그린채널</a>
 			</li>
 			<li>
-				<a href="sub04/index.html"><img src="images/quickIcon2_off.png" alt=""/>그린매거진</a>
+				<a href="../sub04/index.php"><img src="images/quickIcon2_off.png" alt=""/>그린매거진</a>
 			</li>
 			<li>
-				<a href="sub04/index.html"><img src="images/quickIcon3_off.png" alt=""/>그린유튜브</a>
+				<a href="../sub04/index.php"><img src="images/quickIcon3_off.png" alt=""/>그린유튜브</a>
 			</li>
 		</ul>
 		<ul class="member">
-			<li class="first"><a href="login/index.html">로그인</a></li>
-			<li><a href="login/index.html">회원가입</a></li>
-			<li><a href="login/index.html">My study</a></li>
+			<li class="first"><a href="../login/index.php">로그인</a></li>
+			<li><a href="../login/index.php">회원가입</a></li>
+			<li><a href="../login/index.php">My study</a></li>
 		</ul>
 	</div>
 	<section>

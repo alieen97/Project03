@@ -47,11 +47,11 @@
 			<input class="logBtn" value="Login" type="button"/>
 			<div class="userSet cf">
 				<ul>
-					<li><a href="#">아이디찾기</a></li>
+					<li><a href="../modify/member_form.php">아이디찾기</a></li>
 					<li class="line">|</li>
-					<li class="pass"><a href="#">비밀번호 재설정</a></li>
+					<li class="pass"><a href="../modify/member_form.php">비밀번호 재설정</a></li>
 					<li class="line">|</li>
-					<li><a href="#">회원가입</a></li>
+					<li><a href="../modify/member_form.php">회원가입</a></li>
 				</ul>
 			</div>
 		</div>

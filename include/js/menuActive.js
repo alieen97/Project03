@@ -27,16 +27,17 @@
 	function onActive(){
 		if(activeMenu){activeMenu.addClass('on');};
 	};
-	
-	$('.sendImpect').DB_springMove({
-		key:'e24102',          //라이센스키
-		dir:'y',               //방향축('x','y')
-		mirror:-1,              //반대방향이동(1,-1)
-		radius:3,             //반경
-		motionSpeed:0.1        //속도(0~1)
-	});
 
-
+	balloon_Moving();
+	function balloon_Moving(){
+		$(".impectMess").stop().animate({ 'margin-top': '-4px' },500, "", 
+	function(){
+		$(this).animate({ 'margin-top': '-1px' }, 500, "",function(){
+			//자기 호출
+			balloon_Moving(); 
+			});
+		});
+	}
 /* 	var topmenu = $('#gnb > li');
 	var topwrap = $('#gnbSection');
 	var menuHeight = topmenu.children('a').height();

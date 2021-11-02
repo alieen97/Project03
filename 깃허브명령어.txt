@@ -1,0 +1,55 @@
+###########학원에서의 처음 깃저장소 작업
+git init : 깃 저장소를 설정
+	git rm -rf .git : 깃 저장소 설정을 제거
+	git status : 현재 상태를 파악하기
+	git add hello.txt
+	git commit -m "hello text created"
+	error
+git config --global user.email "ashram7@hanmail.net"
+git config --global user.name "ashram7"
+git add -A
+git commit -m "first files upload"
+git remote add origin https://github.com/ashram7/11_project03.git
+git push origin master
+
+
+
+######## 남(자기작업)의 폴더를 통째로 가져오기
+git clone https://github.com/ashram7/11_project03.git . 
+주의 : init가 되지 않은 상태(.git 가 없는 상태)여야 함.
+
+
+
+####### 버젼이 틀려진 상태에서 pull 하기
+git add hello2.txt
+git commit -m "hello2 text created"
+git push origin master
+####### Error
+
+git fetch : 다른 원격 저장소의 데이터를 병합하지 않고 git information 을 로컬로 가져오기만 하기
+git add -A
+git commit -m "all files upload"
+git push -f origin master
+
+
+
+
+####### 브랜치 branch 사용 (프로젝트 작업)
+git branch
+git branch master1
+git checkout master1
+	git checkout -b master2
+git branch
+
+git checkout master1
+git pull
+
+
+
+
+
+
+
+
+
+

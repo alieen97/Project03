@@ -1,5 +1,5 @@
 ﻿/* 메인페이지 */
- /* window.open("popup.html", "", "resizable=no, toolbar=no, width=540, height=600") */
+window.open("popup.html", "", "resizable=no, toolbar=no, width=540, height=600")
 
 
 $(function(){
