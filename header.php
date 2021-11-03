@@ -68,6 +68,10 @@
 								<li class="fl"><a href="./login/index.php">로그아웃</a></li>
 								<li class="fl"><a href="./modify/member_form.php">정보수정</a></li>
 							</ul>
+							
+							<span id="counter"></span>
+							<span>후 자동로그아웃</span>
+							<input type="button" value="연장" onclick="counter_reset()">	
 						</div>
 				</div><!-- class="headerRight" -->
 				<h1>

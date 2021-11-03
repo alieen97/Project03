@@ -1,12 +1,12 @@
 /* 메인 콘텐트 */
-#mainContent { position: relative; width: 1420px; height: 1000px; margin: 0 auto; }
+#mainContent { position: relative; width: 1420px; height: 875px; margin: 0 auto; }
 
 /* 가입 양식 폼 */
 #joinBox {	width: 800px;	margin: 0 auto; }
 .form{width: 800px; padding: 20px 20px 45px; box-sizing:border-box;margin-top:-1px;  border: 1px solid #dddddd;}
-#joinBox h2 {padding-top: 50px; }
+#joinBox h2 {padding-top: 150px; }
 #joinBox .col1 { float: left;	width: 155px; margin-top: 4px; }
-#joinBox .col2 { float: left;	width: 530px; margin-top: -9px;}
+#joinBox .col2 { float: left;	width: 510px; margin-top: -9px;}
 #joinBox .col3 { float: left; }
 #joinBox .form input { width: 390px;height: 45px;border:0;}
 #joinBox .form { height: 38px; }
@@ -16,4 +16,13 @@
 #joinBox .bottom_line { margin-top: 10px;	border-bottom: solid 1px #cccccc; }
 #joinBox .buttons { text-align: center;margin-top: 50px;}
 
+.submit{padding: 20px 60px; background: #2196f3;color: #ffffff;border-radius: 10px;cursor:pointer;}
+.cancle{padding: 20px 60px; background: #79796a;color: #ffffff;border-radius: 10px;cursor:pointer;}
+
+.submit:hover{padding: 20px 60px; background: #08528d;color: #ffffff;}
+.cancle:hover{padding: 20px 60px; background: #43433a;color: #ffffff;}
+
+.checkId{padding: 10px; background: #79796a;color: #ffffff;font-size: 12px;border-radius: 5px;}
+.checkId:hover{background: #43433a;color: #ffffff;}
 .mfIm{color: #ff2626;margin: 10px;}
+.gray{color:#919191;}

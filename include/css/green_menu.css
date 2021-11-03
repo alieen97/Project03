@@ -72,8 +72,8 @@ header{margin-top: -20px;position: relative;z-index:10000;}
 			.memberBox .newCon li .impectMess>div{font-size:0px;}
 			.memberBox .loginMenu li{width: 168px;text-align: center;}
 			.memberBox .loginMenu li a{padding: 11px;}
-		.memberBox li>a{}
-
+		#counter{color: #2196f3; font-weight: bold; font-size: 16px;}
+		
 	h1{margin: 0 auto;text-align: center; font-size: 0;width:340px;display: block;}
 	h1 img{margin: 15px 0 0 -24px;width:340px;}
 		.callNum{display: block;margin: 0 auto;margin-top: -5px;width: 366px;}

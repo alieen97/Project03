@@ -16,9 +16,8 @@
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
 	<script src="../include/js/menuActive.js"></script>
-	<script src="../include/js/common.js"></script>
-	<script src="js/script.js"></script>
-		<script>
+	<script src="../include/js/form_main.js"></script>
+	<script>
 	function check_input()
 	{
 		if(!document.member_form.id.value.trim()){
@@ -80,6 +79,7 @@
 			"IDcheck",
 			"left=700, top=300, width=350, height=200, scrollbars=no, resizable-yes");
 	}
+	
 	</script>
 
 </head>
@@ -95,10 +95,10 @@
 					<div class="form id">
 						<div class="col1"><span class="mfIm">*</span>아이디</div>
 						<div class="col2">
-							<input type="text" name="id" value="아이디를 입력해주세요."/>
+							<input type="text" name="id" class="guideText" value="아이디를 입력해주세요."/>
 						</div>
 						<div class="col3">
-							<a href="#"><img src="../img/check_id.gif" onclick="check_id()"/></a>
+							<a href="#"><span class="checkId" onclick="check_id()">중복확인</span></a>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -106,7 +106,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>비밀번호</div>
 						<div class="col2">
-							<input type="password" name="pass" value="비밀번호를 입력해주세요."/>
+							<input type="password" name="pass" class="guideText" value="비밀번호를 입력"/>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -114,7 +114,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>비밀번호 확인</div>
 						<div class="col2">
-							<input type="password" name="pass_contirm" value="비밀번호 확인을 위하여 한번 더 입력해주세요."/>
+							<input type="password" name="pass_contirm" class="guideText" value="비밀번호 확인"/>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -122,7 +122,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>이름</div>
 						<div class="col2">
-							<input type="text" name="name" value="이름을 입력해주세요."/>
+							<input type="text" name="name" class="guideText" value="이름을 입력해주세요."/>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -130,13 +130,13 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>이메일</div>
 						<div class="col2">
-							<input type="text" name="email1"/>@<input type="text" name="email2"/>
+							<input type="text" name="email1"/> @ <input type="text" name="email2"/>
 						</div>
 					</div>
 					<div class="clear"></div>
 					<div class="buttons">
-						<img style="cursor:pointer" src="../img/button_save.gif" onclick="check_input()"/>&nbsp;
-						<img id="reset_button" style="cursor:pointer" src="../img/button_reset.gif" onclick="reset_form()"/>
+						<span class="submit" onclick="check_input()">등록</span>
+						<span class="cancle" onclick="reset_form()">취소</span>
 					</div>
 				</form>
 			</div>
