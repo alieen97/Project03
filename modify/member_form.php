@@ -17,6 +17,8 @@
 	<script src="../include/js/html5shiv.js"></script>
 	<script src="../include/js/menuActive.js"></script>
 	<script src="../include/js/form_main.js"></script>
+	<script src="js/script.js"></script>
+
 	<script>
 	function check_input()
 	{
@@ -95,7 +97,7 @@
 					<div class="form id">
 						<div class="col1"><span class="mfIm">*</span>아이디</div>
 						<div class="col2">
-							<input type="text" name="id" class="guideText" value="아이디를 입력해주세요."/>
+							<input type="text" name="id" class="guideText" placeholder="아이디를 입력해주세요."/>
 						</div>
 						<div class="col3">
 							<a href="#"><span class="checkId" onclick="check_id()">중복확인</span></a>
@@ -106,7 +108,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>비밀번호</div>
 						<div class="col2">
-							<input type="password" name="pass" class="guideText" value="비밀번호를 입력"/>
+							<input type="password" name="pass" class="guideText" placeholder="비밀번호 입력"/>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -114,7 +116,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>비밀번호 확인</div>
 						<div class="col2">
-							<input type="password" name="pass_contirm" class="guideText" value="비밀번호 확인"/>
+							<input type="password" name="pass_contirm" class="guideText" placeholder="비밀번호 확인"/>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -122,7 +124,7 @@
 					<div class="form">
 						<div class="col1"><span class="mfIm">*</span>이름</div>
 						<div class="col2">
-							<input type="text" name="name" class="guideText" value="이름을 입력해주세요."/>
+							<input type="text" name="name" class="guideText" placeholder="이름을 입력해주세요."/>
 						</div>
 					</div>
 					<div class="clear"></div>
