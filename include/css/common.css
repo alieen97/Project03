@@ -12,7 +12,7 @@ a:hover { text-decoration:none; color: #222222; }
 a:visited { text-decoration:none; color: #222222; }
 a:active { text-decoration:none; color: #222222; }
 /* 상단 헤더 */
-#top { position: relative; width: 1000px; height: 80px; margin: 0 auto; }
+/*#top { position: relative; width: 1000px; height: 80px; margin: 0 auto; }
 #top h1 { position: absolute; top: 20px; left: 40px;}
 #top h1 a{ font-family: 'Henny Penny', cursive; color: #999999; }
 #top h2 { position: absolute; top: 27px; left: 168px;}
@@ -35,4 +35,4 @@ footer { height: 70px; background-color: #efefef; }
 #footer_logo { position: absolute; top: 24px; left: 40px; font-size: 16px; }
 #footer_logo span { font-family: 'Henny Penny', cursive; color: #888888; font-weight: bold; }
 #download { position: absolute; top: 20px; left: 400px; }
-#author { position: absolute; top: 20px; right: 40px; }
+#author { position: absolute; top: 20px; right: 40px; }*/

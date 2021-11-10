@@ -1,0 +1,44 @@
+#messageBox{width: 800px; height:  880px;margin: 0 auto;}
+#writeTitle{margin-top:100px;}
+.topButtons li{float: left;}
+.topButtons li a{display:block;width: 400px;height: 55px;line-height: 55px; text-align: center;border:1px solid #aaaaaa;box-sizing: border-box;margin-top:30px;}
+.topButtons li a.rv{border-right:0;}
+.topButtons li a.rv:hover{background:#2196f3; color: #ffffff;}
+.topButtons li a.send:hover{background:#79796a;color: #ffffff; }
+#writeMsg{margin-top: 31px;}
+#writeMsg li{width: 800px;height: 74px;line-height: 74px;box-sizing:border-box;margin-top:-1px;border:1px solid #aaaaaa;}
+#writeMsg li.id input{border:0;border-bottom: 2px solid #dddddd;height:30px;width: 584px;margin-left: 10px;}
+#writeMsg li.title input{border:0;border-bottom: 2px solid #dddddd;width:637px;height:30px;margin-left: 10px;}
+#writeMsg li#textArea{height: 325px;}
+#writeMsg li#textArea .col1{display: block;}
+#writeMsg li#textArea textarea{width: 650px;height: 220px;display:block;margin: 0 auto; }
+
+button{float: right; padding: 10px 20px;margin: 50px 0 0 10px; }
+
+
+.mfIm{color: #ff2626;margin: 10px;}
+
+h3{margin-top: 100px;}
+
+#message li{width: 800px; height: 74px;line-height: 74px;border-bottom: 1px solid #dddddd;}
+#message li span{text-align: center;display: block;float: left;}
+#message li span.col1{width: 120px;}
+#message li span.col2{width: 470px;}
+#message li span.col3{width: 145px;}
+#message li span.col4{width: 150px;}
+
+#pageNum {text-align: center;}
+
+#messageListBox{width: 1000px;height: 1100px;margin: 0 auto;}
+#messageList{margin-top: 30px;}
+#messageList li{width: 1000px; height: 74px;line-height: 74px;border-bottom: 1px solid #dddddd;}
+#messageList li span{text-align: center;display: block;float: left;}
+#messageList li span.col1{width: 75px;}
+#messageList li span.col2{width: 510px;}
+#messageList li span.col2 a{float: left;}
+#messageList li span.col3{width: 195px;}
+#messageList li span.col4{width: 215px;}
+
+#messageReBox{width: 800px; height:  880px;margin: 0 auto;}
+#messageReBox #writeMsg li .col1{margin: 0 10px 0 30px;}
+

@@ -9,10 +9,6 @@
 	<title>그린컴퓨터아카데미</title>
 	<link rel="stylesheet" href="include/css/green_menu.css"/>
 	<link rel="stylesheet" href="include/css/layout_menu.css"/>
-	<!--[if lte ie 8]>
-		<link href="css/non-ie9.css" rel="stylesheet">
-	<![endif]-->
-
 	<link rel="icon" sizes="16x16" href="include/images/green_pavi_ori.gif">
 	<script src="include/js/jquery-1.10.2.min.js"></script>
 	<script src="include/js/jquery.easing.1.3.min.js"></script>	
@@ -27,7 +23,6 @@
  	<script src="include/js/weatherSuwon.js"></script>	
 	<script src="include/js/weatherBusan.js"></script>	
 	<script src="include/js/mainBanner.js"></script>
-	<script src="include/js/popoup.js"></script>
 	<script src="include/js/menuActive.js"></script>	
 	<script src="include/js/main.js"></script>	
 	<script>
@@ -132,7 +127,7 @@
 		</ul>
 		<ul class="member">
 			<li class="first"><a href="login/index.php">로그인</a></li>
-			<li><a href="login/index.php">회원가입</a></li>
+			<li><a href="modify/member_form.php">회원가입</a></li>
 			<li><a href="login/index.php">My study</a></li>
 		</ul>
 	</div>

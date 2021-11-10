@@ -11,14 +11,10 @@
 	<link rel="stylesheet" href="css/layout_menu.css"/>
 	<link rel="icon" sizes="16x16" href="../include/images/green_pavi_ori.gif">
 	<script src="../include/js/jquery-1.9.0.min.js"></script> 
-	<script src="../include/js/DB_springMove_fn.js"></script>	
 	<script src="../include/js/menuActive.js"></script> 
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
-	<script src="js/DB_springMove_fn.js"></script>
-	<script src="../include/js/menuActive.js"></script>
 	<script src="../include/js/common.js"></script>
-	<script src="js/main.js"></script>	
 
 	
 </head>

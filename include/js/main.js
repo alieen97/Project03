@@ -1,16 +1,8 @@
 ﻿/* 메인페이지 */
-window.open("popup.html", "", "resizable=no, toolbar=no, width=540, height=600")
+// window.open("popup.html", "", "resizable=no, toolbar=no, width=540, height=600")
 
 
 $(function(){
-	/* 로그인임펙트 */
-	$('.impectMess').DB_springMove({
-		key:'e24102',          //라이센스키
-		dir:'y',               //방향축('x','y')
-		mirror:1,              //반대방향이동(1,-1)
-		radius:0.7,             //반경
-		motionSpeed:0.3        //속도(0~1)
-	})
 	
 	/* 헤더순환배너 */
 	var mnBanner=$('.brandBanner');
@@ -88,6 +80,24 @@ $(function(){
 			mover(Nocurrent);
 		}
 	);
+
+	// php파트 탭메뉴
+
+	var phpTab=$(".tabPart>h4");
+	var phpCon=$(".phpWrap>div");
+	phpCon.hide();
+	phpCon.eq(0).show();
+	phpTab.on('mouseover',function(){
+		var tg=$(this);
+		var i = tg.index();
+		phpCon.hide();
+		phpCon.eq(i).show();
+		phpTab.removeClass('active');
+		tg.addClass('active');
+		
+	});
+
+
 	/* 트로피순환 */
 	 var trophy  = setInterval(trophyFun, 2000);
 	  var inter = true;

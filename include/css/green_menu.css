@@ -48,7 +48,7 @@ header{margin-top: -20px;position: relative;z-index:10000;}
 
 
 #headerTop{width: 1420px;height: 210px;margin:0 auto;overflow: hidden;}
-	#headerLeft{position: relative;top: 100px;width:335px; height: 63px;overflow: hidden;}
+	#headerLeft{position: relative;top: 90px;width:335px; height: 63px;overflow: hidden;}
 		.bannerImg{width: auto;height: auto;float:left;}
 	#headerLeft .brandBanner{position: absolute;width:352px; height: 63px;}
 	#headerLeft .brandBanner.two{top: 100%;}
@@ -56,25 +56,38 @@ header{margin-top: -20px;position: relative;z-index:10000;}
 		#headerLeft h2{float:left;display:block;font-size: 16px;letter-spacing: -2px;color: #575748;margin-bottom: 7px;}
 		#headerLeft a{float:left;font-size: 0.74em;letter-spacing: -1px;color: #8a8a7b;}
 	
-	#headerRight{float: right;text-align: right;color: #333333;}
+	#headerRight{float: right;position: relative;text-align: right;color: #333333;top:0;}
+			.loginBox{margin-top: 46px; font-weight: bold;}
+			.loginBox a{padding: 0 20px;}
+			.loginBox a:hover{text-decoration: underline;}
+			.timeControl{width: 237px;margin-top: 20px;}
+			.timeBtn{display: block; float: right;width: 205px;height: 25px;margin-top: 10px; background: #}
+
+			.bfLoginBox{margin-top: 32px;}
+			.bfLoginBox li{padding: 10px 15px; margin-left: 25px; border-radius: 10px; border: 1px solid #dddddd;}
+			.bfLoginBox li:hover{background: #dddddd;font-weight:bold;}
+
 			.sendImpect{display: block;width: 70px;height: 40px; margin-left: 197px; }
 			.memberBox{width: 340px;height: 115px;color: #555555;border: 1px solid #dddddd; box-sizing: border-box;box-shadow: 1px 1px 1px #eeeeee;border-radius:5px;}
 			.memberBox li a{text-align: center;padding:11px 10px 11px 20px;font-size: 11px;}
 			.memberBox li:hover a{text-decoration: underline; font-weight: bold;}
+			.memberBox .memberInfo{position: absolute;top:0;left: 0; width: 182px;height: 76px;border-bottom:1px solid #dddddd;border-right:1px solid #dddddd;box-sizing:border-box;}
+			.memberBox .memberInfo li{float:left;width: 167px;}
 			.memberBox .memberInfo p{font-size:15px;text-align: justify;width: 151px;text-align:center;}
-			.memberBox .memberInfo{width: 182px;height: 76px;padding: 8px 0px 0px 20px; border-bottom:1px solid #dddddd;border-right:1px solid #dddddd;box-sizing:border-box;}
-			.memberBox .memberInfo p.userName{font-size:16px;padding: 6px 0;text-align: justify;width: 151px;}
-			.memberBox .newCon{width: 145px;}
+			.memberBox .memberInfo p.userName{font-size:16px;padding: 8px 0;text-align: justify;width: 151px;}
+			.memberBox .newCon{position: absolute; top: 0;left: 182px; width: 145px;}
 			.memberBox .newCon ul{float: left;}
 			.memberBox .newCon li{position: relative;border-bottom:1px solid #dddddd;width: 167px;height: 37px;}
 			.memberBox .impectUser img{width: 18px; margin: 3px 3px 0 0;}
-			.memberBox .newCon li .impectMess{float: left;margin: -2px -30px 0 24px;left: 7px;top: 9px;}
+			.memberBox .newCon li .impectMess{float: left;margin: -2px -27px 0 18px;left: 7px;top: 9px;}
 			.memberBox .newCon li .impectMess>div{font-size:0px;}
-			.memberBox .loginMenu li{width: 168px;text-align: center;}
-			.memberBox .loginMenu li a{padding: 11px;}
+			.memberBox .loginMenu{width:340px;position:absolute;top: 76px;left: 0;}
+			.memberBox .loginMenu ul{width:340px;}
+			.memberBox .loginMenu li{float: left;text-align: center;width: 33%;}
+			
 		#counter{color: #2196f3; font-weight: bold; font-size: 16px;}
 		
-	h1{margin: 0 auto;text-align: center; font-size: 0;width:340px;display: block;}
+	h1{position: absolute;left: 41%;top: 60px;margin: 0 auto;text-align: center; font-size: 0;width:340px;display: block;}
 	h1 img{margin: 15px 0 0 -24px;width:340px;}
 		.callNum{display: block;margin: 0 auto;margin-top: -5px;width: 366px;}
 		.callNum>h4{font-size: 19px;letter-spacing: 28px;color: #0091db;display: block;height: 30px;}

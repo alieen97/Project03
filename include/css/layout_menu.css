@@ -61,9 +61,9 @@ a:visited{color: #333333;}
 	#mainBanner a.left{float: left;margin-top: 225px;}
 	#mainBanner a.right{float: right;margin-top: 225px;}
 	#quickMenu{margin: 0 auto;margin-bottom: 50px;width: 1420px; height: 530px;}
-		#quickIcon{float: left;width: 616px; height: 120px; margin-left: 5px;position: relative;}
-			#quickIcon .ori{position: absolute;}
-			#quickIcon li{float: left;position: relative; width: 95px;height: 105px;margin-right: 7px;}
+		#quickIcon{float: left;width: 616px; height: 320px; margin:20px 0 0 5px;position: relative;}
+			#quickIcon .ori{position: absolute;width: 646px;height: 120px;overflow: hidden;margin-top: 20px;}
+			#quickIcon li{float: left;position: relative;margin-right: 7px;}
 			#quickIcon li a{display:block;padding: 10px;margin:0 auto;}
 			#quickIcon li span{width: 80px;text-align: center;position: absolute; top: 75px;left: 10px;}
 			#quickIcon li:hover span{font-weight: bold;}
@@ -71,15 +71,27 @@ a:visited{color: #333333;}
 			#quickIcon li img{width: 55px;margin: 0 14px;text-align:center;}
 			#quickIcon li.long img{height: 56px;width: auto;margin: 0 10px;}
 					
-			
-			#mainNotice{width: 730px;height:45px; float: right;}
- 			#mainNotice .callSet{width: 730px;height:45px;}
-				#mainNotice .callNum{font-size: 2.2em;font-weight: bold;color:#0091db;letter-spacing: 2px;}
+		#phpPart{width: 730px;height: 320px;float: left;margin-left: 50px;position: relative;}
+		#phpPart>div>div{width: 730px;height: 276px;padding: 15px 20px;box-sizing: border-box;position: absolute;top: 44px;background: #ffffff;box-shadow: 0px -1px 1px #aaaaaa;border: 1px solid #999999;}
+		#phpPart h4{position: absolute;width: 365px;height: 45px;line-height: 45px;float: left;text-align: center;background: #dddddd;}
+		#phpPart h4.point{left: 365px;}
+		#phpPart h4.active{background: #ffffff;font-weight: bold;z-index: 1;border: 1px solid #999999;border-bottom: 0;box-sizing: border-box;}
+			#latest li{height: 38px;}	
+				#latest li span{display: block;float: left;}	
+				#latest li .subject{width: 459px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}	
+				#latest li .name{width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-align: center;}	
+				#latest li .rd{width: 129px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-align: center;}	
+			#pointRank li{height: 37px;}	
+			#pointRank li span{display: block;width: 25%;float: left;}	
+
+			#mainNotice{width: 600px;height:45px; float: left;margin-top: 150px;}
+ 			#mainNotice .callSet{width: 600px;height:45px;}
+				#mainNotice .callNum{font-size: 2.2em;font-weight: bold;color:#0091db;letter-spacing: 2px;width: 210px;margin-left: 20px;}
 				#mainNotice .callTime{margin: 25px 10px 0 0;font-size: 0.75em;}
-			#mainNotice .notice{height: 55px;border-radius: 50px;
-								border: 1px solid #cccccc;background: #ffffff;margin-top: 5px;}
+			#mainNotice .notice{height: 55px;border-radius: 50px;width: 630px;
+								border: 1px solid #cccccc;background: #ffffff;margin-top: 15px;}
 				#mainNotice span{padding: 13px 35px ;color:#0091db;font-size: 1.2em;font-weight: bold;letter-spacing: -1px;}
-				#mainNotice .cycleSec{height: 53px;width: 510px;position: relative;overflow:hidden;}
+				#mainNotice .cycleSec{height: 53px;width: 430px;position: relative;overflow:hidden;}
 				#mainNotice .cycleSec p{padding-right:10px;height: 54px;position: absolute;top: 100%;width: 510px;box-sizing: border-box;}
 				#mainNotice .cycleSec a{display: block;width: 510px;padding: 16px 0 16px;}
 				#mainNotice .cycleSec a:hover{color: #777777; font-weight:bold; text-decoration: underline;}

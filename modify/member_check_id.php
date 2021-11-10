@@ -43,6 +43,7 @@
 			else
 			{
 				echo "<li>".$id." 아이디는 사용 가능합니다.</li>";
+				echo "<script>setParentText();</script>";
 			}
 
 			mysqli_close($con);

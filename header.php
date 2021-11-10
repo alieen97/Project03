@@ -1,6 +1,19 @@
+<?php
+    include "./include/define.php";
+
+    session_start(); 
+    if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"]; 
+    else $userid = ""; 
+    if (isset($_SESSION["username"])) $username = $_SESSION["username"]; 
+    else $username = ""; 
+    if (isset($_SESSION["userlevel"])) $userlevel = $_SESSION["userlevel"]; 
+    else $userlevel = ""; 
+    if (isset($_SESSION["userpoint"])) $userpoint = $_SESSION["userpoint"]; 
+    else $userpoint = ""; 
+?>
 		<div id="headerWrap" class="cf">
 			<div id="headerTop" class="cf">
-				<div id="campusWrap">
+<!-- 				<div id="campusWrap">
 					<div class="home"><a href="./index.php"><img src="include/images/homeIcon.png" width="20" height="20" alt="hometab"/></a><span class="hidden">그린컴퓨터학원</span></div>
 					<div class="gijumSel"><a href="#">지점선택</a>
 						<div class="campusLink">
@@ -31,7 +44,7 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- class="campusWrap" -->			
+				</div> --><!-- class="campusWrap" -->			
 				<div id="headerLeft" class="cf">
 					<div class="brandBanner cf">
 						<div class="bannerImg">
@@ -53,7 +66,7 @@
 					</div>
 				</div>
 				<div id="headerRight" class="cf">
-						<div class="memberBox cf">
+						<!--<div class="memberBox cf">
 							<div class="memberInfo fl cf">
 								<p class="userName"><span class="impectUser"><img src="include/images/newUser.png" alt=""/></span><strong>관리자(admin) </strong>님</p>
 								<p>[Level: 9,Point: 1300]</p>
@@ -69,9 +82,11 @@
 								<li class="fl"><a href="./modify/member_form.php">정보수정</a></li>
 							</ul>
 							
+						</div>-->
+						<div class="timeControl">	
 							<span id="counter"></span>
-							<span>후 자동로그아웃</span>
-							<input type="button" value="연장" onclick="counter_reset()">	
+							<span>후 자동으로 <br/>로그인페이지로 이동합니다.</span>
+							<input class="timeBtn" type="button" value="연장" onclick="counter_reset()">	
 						</div>
 				</div><!-- class="headerRight" -->
 				<h1>

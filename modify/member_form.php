@@ -7,7 +7,6 @@
 	<meta name="Keywords" content="김혜련,Kimhyelyeon, 포트폴리오, 김혜련 포트폴리오, portfolio, Hyelyeon's portfolio"/>
 	<meta name="Description" content="김혜련의 포트폴리오 페이지 입니다"/>
 	<title>회원가입</title>
-	<link rel="stylesheet" href="../include/css/common.css"/>
 	<link rel="stylesheet" href="../include/css/member.css"/>
 	<link rel="stylesheet" href="../include/css/green_menu.css"/>
 	<link rel="stylesheet" href="css/layout_menu.css"/>
@@ -61,8 +60,14 @@
 			document.member_form.pass.select();
 			return;
 		}
-		
-		document.member_form.submit();
+      if(document.getElementById("pInput").value == "no"){
+        alert("중복확인 버튼을 눌러 아이디 중복을 확인해주세요!"); 
+        document.member_form.id.focus(); 
+        // select()를 사용하여 블럭지정
+        document.member_form.id.select(); 
+        return;
+      }else{
+        document.member_form.submit(); 
 	}
 
 	function reset_form(){
@@ -93,6 +98,7 @@
 		<div id="mainContent">
 			<div id="joinBox">
 				<form name="member_form" method="post" action="member_insert.php">
+					<input type="hidden" id="pInput" value="no" name="check" />
 					<h2>회원가입</h2>
 					<div class="form id">
 						<div class="col1"><span class="mfIm">*</span>아이디</div>

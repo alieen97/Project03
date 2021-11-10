@@ -21,13 +21,11 @@
 	<script type="text/javascript" src="js/jquery.cookie.js"></script>  <!-- 쿠키 플러그인 연동 -->
 	<script src="js/html5div.js"></script>
 	<script src="js/html5shiv.js"></script>
-	<script src="js/DB_springMove_fn.js"></script>	
 	<script src="js/weatherAnyang.js"></script>	
 	<script src="js/weatherSeoul.js"></script>	
  	<script src="js/weatherSuwon.js"></script>	
 	<script src="js/weatherBusan.js"></script>	
 	<script src="js/mainBanner.js"></script>
-	<script src="js/popoup.js"></script>
 	<script src="js/menuActive.js"></script>	
 	<script src="js/main.js"></script>	
 	
@@ -90,7 +88,7 @@
 		</ul>
 		<ul class="member">
 			<li class="first"><a href="../login/index.php">로그인</a></li>
-			<li><a href="../login/index.php">회원가입</a></li>
+			<li><a href="../modify/member_form.php">회원가입</a></li>
 			<li><a href="../login/index.php">My study</a></li>
 		</ul>
 	</div>

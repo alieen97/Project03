@@ -18,7 +18,6 @@
 	
 	<script src="../include/js/jquery-1.7.1.min.js"></script> 
 	<script src="js/jquery.easing.1.3.min.js"></script> 
-	<script src="../include/js/DB_springMove_fn.js"></script>	
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
 	<script src="../include/js/menuActive.js"></script> 

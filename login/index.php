@@ -17,8 +17,6 @@
 	<script src="../include/js/jquery-1.9.0.min.js"></script> 
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/DB_springMove_fn.js"></script>	
-
 	<script src="../include/js/menuActive.js"></script>
 	<script src="../include/js/common.js"></script>
 	
@@ -36,8 +34,8 @@
 			<div class="inputWrap fl">
 				<form  name="login_form" method="post" action="login.php"> 
 					<div class="inputTextWrap fl">
-						<input id="id" class="id" name="id" title="아이디" value="admin" type="text" placeholder="아이디"/>
-						<input id="pass" class="pass" name="pass" title="패스워드" value="1234" type="password" maxlength="15" placeholder="비밀번호"/>
+						<input id="id" class="id" name="id" title="아이디" value="alieen" type="text" placeholder="아이디"/>
+						<input id="pass" class="pass" name="pass" title="패스워드" value="19991103" type="password" maxlength="15" placeholder="비밀번호"/>
 					</div>
 					<button class="logBtn" onclick="check_input()">Login</span></a>
 				</form>

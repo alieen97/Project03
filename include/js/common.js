@@ -1,13 +1,6 @@
 ﻿<!-- 메뉴 -->
 $(function(){
 	/* 로그인임펙트 */
-	$('.impectMess').DB_springMove({
-		key:'e24102',          //라이센스키
-		dir:'y',               //방향축('x','y')
-		mirror:1,              //반대방향이동(1,-1)
-		radius:0.7,             //반경
-		motionSpeed:0.3        //속도(0~1)
-	});
 	/* 헤더순환배너 */
 	var mnBanner=$('.brandBanner');
 	var mncurrent=0;

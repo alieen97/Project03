@@ -73,27 +73,96 @@
 						</li>
 
 					</ul>
+					<div id="mainNotice" class="cf">
+						<div class="callSet cf">
+							<ul>
+								<li class="callNum fl">1588.9780</li>
+								<li class="callTime fl">평일 09:00~22:30 | 토요일 09:00~18:30</li>
+							</ul>
+						</div>
+						<div class="notice cf">
+							<span class="fl">NOTICE</span>
+							<div class="cycleSec fl cf">
+								<p class="fl" style="top:0;"><a href="#">이달의 추천과정</a></p>
+								<p class="fl"><a href="#">자격증 취득부터 취업까지</a></p>
+								<p class="fl"><a href="#">[강남점] 09월~10월 일반/실업자/재직자교육과정 개강안내</a></p>
+							</div>
+							<div class="noArrowSet cf">
+								<p><a href="#" class="prev"><img src="images/arrowTop.PNG" width="22px" height="17px;" alt="topArrow"/></a></p>
+								<p><a href="#" class="next"><img src="images/arrowBot.PNG" width="22px" height="17px;" alt="bottomArrow"/></a></p>
+							</div>
+						</div>
+					</div><!-- id="mainNotice" -->
 				</div><!-- id="quickIcon" -->
-				<div id="mainNotice" class="cf">
-					<div class="callSet cf">
-						<ul>
-							<li class="callNum fr">1588.9780</li>
-							<li class="callTime fr">평일 09:00~22:30 | 토요일 09:00~18:30</li>
-						</ul>
+				<div id="phpPart">
+					<div class="tabPart">
+                		<h4 class="board active">최근 게시글</h4>
+		                <h4 class="point">포인트 랭킹</h4>
+                	</div>
+                	<div class="phpWrap">
+		            	<div id="latest">
+                			<ul>
+<!-- 최근 게시 글 DB에서 불러오기 -->
+<?php
+    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname); // 총 01/21개 페이지 수정
+    $sql = "select * from board order by num desc limit 7";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "게시판 DB 테이블(board)이 생성 전이거나 아직 게시글이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $regist_day = substr($row["regist_day"], 0, 10);
+?>       
+	                    	<li>
+	                      	  <span class="subject"><?=$row["subject"]?></span>
+	                     	   <span class="name"><?=$row["name"]?></span>
+	                     	   <span class="rd"><?=$regist_day?></span>
+	                   		 </li>          
+<?php
+        }
+    }
+?>
+                			</ul>
+           			 	</div>
+            			<div id="pointRank">
+		            	    <ul>
+<!-- 포인트 랭킹 표시하기 -->
+<?php
+    $rank = 1;
+    $sql = "select * from members order by point desc limit 7";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "회원 DB 테이블(members)이 생성 전이거나 아직 가입된 회원이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $name  = $row["name"]; 
+            $id    = $row["id"];
+            $point = $row["point"];
+            $name = mb_substr($name, 0, 1)." * ".mb_substr($name, 2, 1);
+?>
+		                   		 <li>
+			                        <span><?=$rank?></span>
+			                        <span><?=$name?></span>
+			                        <span><?=$id?></span>
+			                        <span><?=$point?></span>
+			                    </li>
+<?php
+    $rank++;
+        }
+    }
+    
+    mysqli_close($con);
+?>
+                			</ul>
+           				 </div>
 					</div>
-					<div class="notice cf">
-						<span class="fl">NOTICE</span>
-						<div class="cycleSec fl cf">
-							<p class="fl" style="top:0;"><a href="#">이달의 추천과정</a></p>
-							<p class="fl"><a href="#">자격증 취득부터 취업까지</a></p>
-							<p class="fl"><a href="#">[강남점] 09월~10월 일반/실업자/재직자교육과정 개강안내</a></p>
-						</div>
-						<div class="noArrowSet cf">
-							<p><a href="#" class="prev"><img src="images/arrowTop.PNG" width="22px" height="17px;" alt="topArrow"/></a></p>
-							<p><a href="#" class="next"><img src="images/arrowBot.PNG" width="22px" height="17px;" alt="bottomArrow"/></a></p>
-						</div>
-					</div>
-				</div><!-- id="mainNotice" -->
+				</div><!-- id="phpPart" -->
 				<div id="quickSearch cf">
 					<div id="menuSearch" class="cf">
 						<div class="msTit fl">

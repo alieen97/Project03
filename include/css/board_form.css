@@ -1,0 +1,62 @@
+#boardBox{width: 1200px; height:1000px;margin: 0 auto;}
+#boardTitle{margin-top:100px;}
+#boardForm{margin-top: 31px;}
+#boardForm li{width: 1200px;height: 74px;line-height: 74px;box-sizing:border-box;margin-top:-1px;border:1px solid #aaaaaa;}
+#boardForm li.id input{border:0;height:30px;width: 600px;margin-left: 10px;}
+#boardForm li.title input{border:0;width:655px;height:30px;margin-left: 10px;}
+#boardForm li#textArea{height: 500px;}
+#boardForm li#textArea .col1{display: block;}
+#boardForm li#textArea textarea{width: 885px;height: 360px;display:block;margin: 0 auto; }
+
+#boardForm li .col1{margin: 0 50px 0 50px;}
+#boardForm li.title .col2 input{border:0;border-bottom: 2px solid #dddddd;height:30px;width: 888px;margin-left: 10px;}
+
+button{float: right; padding: 10px 20px;margin: 50px 0 0 10px; }
+
+#boardListBox{width: 1000px;height:  860px;margin: 0 auto;}
+
+#boardList li{width: 1000px;height: 55px;}
+#boardList li span{display: block; float: left;text-align: center;}
+#boardList li .col1{width:65px;}
+#boardList li .col2{width:510px;}
+#boardList li .col2.title{text-align: left;}
+#boardList li .col3{width:100px;}
+#boardList li .col4{width:60px;}
+#boardList li .col5{width:190px;}
+#boardList li .col6{width:55px;}
+
+#pageNum li{float: left;}
+
+h3{margin: 50px 0 50px 0;}
+
+
+#boardView{width: 1200px; height: auto;margin: 0 auto;}
+#boardView title{margin-top: 30px;}
+#viewContent{border: 1px solid #dddddd;padding: 20px; box-sizing: border-box;}
+#viewContent li.title{height: 74px;line-height: 74px;border-bottom: 2px solid #dddddd;}
+#viewContent li.con{padding: 40px 15px 40px 15px; box-sizing: border-box;line-height: 35px;}
+#viewContent li.title .col1{float: left;}
+#viewContent li.title .col2{float: right;}
+.buttons{margin-bottom: 70px;}
+
+#message li{width: 800px; height: 74px;line-height: 74px;border-bottom: 1px solid #dddddd;}
+#message li span{text-align: center;display: block;float: left;}
+#message li span.col1{width: 75px;}
+#message li span.col2{width: 430px;}
+#message li span.col3{width: 145px;}
+#message li span.col4{width: 150px;}
+
+#pageNum {text-align: center;}
+
+#messageListBox{width: 1000px;height: 1100px;margin: 0 auto;}
+#messageList li{width: 1000px; height: 74px;line-height: 74px;border-bottom: 1px solid #dddddd;}
+#messageList li span{text-align: center;display: block;float: left;}
+#messageList li span.col1{width: 75px;}
+#messageList li span.col2{width: 510px;}
+#messageList li span.col3{width: 195px;}
+#messageList li span.col4{width: 215px;}
+
+#messageReBox{width: 800px; height:  880px;margin: 0 auto;}
+
+
+

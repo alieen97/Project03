@@ -1,6 +1,20 @@
+<?php
+    include "../include/define.php";
+
+    session_start(); 
+    if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"]; 
+    else $userid = ""; 
+    if (isset($_SESSION["username"])) $username = $_SESSION["username"]; 
+    else $username = ""; 
+    if (isset($_SESSION["userlevel"])) $userlevel = $_SESSION["userlevel"]; 
+    else $userlevel = ""; 
+    if (isset($_SESSION["userpoint"])) $userpoint = $_SESSION["userpoint"]; 
+    else $userpoint = ""; 
+?>
+
 		<div id="headerWrap" class="cf">
 			<div id="headerTop" class="cf">
-				<div id="campusWrap">
+				<!--<div id="campusWrap">
 					<div class="home"><a href="#"><img src="../include/images/homeIcon.png" width="20" height="20" alt="hometab"/></a><span class="hidden">그린컴퓨터학원</span></div>
 					<div class="gijumSel"><a href="#">지점선택</a>
 						<div class="campusLink">
@@ -31,7 +45,7 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- class="campusWrap" -->			
+				</div>class="campusWrap" -->			
 				<div id="headerLeft" class="cf">
 					<div class="brandBanner cf">
 						<div class="bannerImg">
@@ -52,23 +66,61 @@
 						</div>
 					</div>
 				</div>
+									
+<?php 
+    if(!$userid) { 
+?>
 				<div id="headerRight" class="cf">
-						<div class="memberBox cf">
-							<div class="memberInfo fl cf">
-								<p class="userName"><span class="impectUser"><img src="../include/images/newUser.png" alt=""/></span><strong>관리자(admin) </strong>님</p>
-								<p>[Level: 9,Point: 1300]</p>
-							</div>
+					<div class="bfLoginBox cf">
+			 			<ul class="fr">
+			                <li class="fl"><a href="../modify/member_form.php">회원 가입</a></li> 
+			                <li class="fl"><a href="../login/index.php">로그인</a></li> 
+			            </ul>
+ 					</div>
+ 				</div>
+<?php 
+    } else { 
+        $logged = $username."(".$userid.")님[Level:".$userlevel.", Point:".$userpoint."]"; 
+?>  
+				<div id="headerRight" class="cf">
+					<div class="memberBox cf">
+						<div class="memberInfo fl cf">
+							<p class="userName">
+				                <li><span class="impectUser"><img src="../include/images/newUser.png" alt=""/></span><?=$logged?> </li> 
+				             </p>
 							<div class="newCon fl cf">
+								<ul class="cf">
+									<li class="cf"><a href="../message/message_form.php"><span class="impectMess"><img src="../include/images/newMes.png" alt=""/></span>쪽지보내기</a></li>
+									<li class="cf"><a href="../sub04/board_form.php"><span class="impectMess"><img src="../include/images/newWri.png" alt=""/></span>새 글 쓰기</a></li>
+								</ul>
+							</div>
+
+							<ul class="loginMenu cf">
+				                <li><a href="../index.php">로그아웃</a> </li> 
+				                <li><a href="../modify/member_modify_form.php">정보 수정</a></li>
+<?php 
+    } 
+?>  
+<?php 
+    if($userlevel==1) {
+?>
+				                <li><a href="./admin/admin.php">관리자 모드</a></li> 
+<?php
+    }
+?> 
+							</ul>
+						</div>
+							<!--<div class="newCon fl cf">
 								<ul class="cf">
 									<li class="cf"><a href="../login/index.php"><span class="impectMess"><img src="../include/images/newMes.png" alt=""/></span>쪽지보내기</a></li>
 									<li class="cf"><a href="../login/index.php"><span class="impectMess"><img src="../include/images/newWri.png" alt=""/></span>새 글 쓰기</a></li>
 								</ul>
-							</div>
-							<ul class="loginMenu cf">
+							</div>-->
+							<!--<ul class="loginMenu cf">
 								<li class="fl"><a href="../login/index.php">로그아웃</a></li>
 								<li class="fl"><a href="../modify/index.php">정보수정</a></li>
-							</ul>
-						</div>
+							</ul>-->
+					</div>
 				</div><!-- class="headerRight" -->
 				<h1>
 					<a href="../include/index1.php" tabindex="1"><img src="../include/images/green_logo.png" alt="그린아카데미로고"/>그린컴퓨터학원</a>

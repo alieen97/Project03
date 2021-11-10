@@ -14,7 +14,7 @@ img{border: 0;}
 section{width: 100%; height: 1947px;/* background: #dddddd; */overflow: auto;}
 	#boardTitle{width: 383px; height: 200px; margin: 0 auto;/* background: #333333; */text-align: center;}
 		#boardTitle p{margin-bottom: 10px;color: #666666;}
-		#boardTitle h2{margin-bottom: 20px;font-size: 27px;letter-spacing: 10px;}
+		#boardTitle h2{margin-bottom: 20px;font-size: 27px;letter-spacing: 10px;color: #555555;}
 		#boardTitle .dashLine{margin-bottom: 30px;}
 		#boardTitle .boardInfo{font-size: 15px;letter-spacing: 2px;}
 		

@@ -15,7 +15,6 @@
 	<script src="../include/js/jquery-1.7.1.min.js"></script> 
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/DB_springMove_fn.js"></script>	
 	<script src="../include/js/menuActive.js"></script> 
 	<script src="../include/js/common.js"></script>
 	<script src="js/script.js"></script>
@@ -26,21 +25,15 @@
 		<?php include "../include/header.php";?>
 	</header>
 	<section>
+		<div class="titleWrap">
+			<div id="boardTitle">
+				<p class="subTit">student</p>
+				<h2>자주묻는 질문</h2>
+				<p class="dashLine"><img src="../include/images/line.png" alt="line"/></p>
+				<p class="boardInfo">그린아카데미 사이트 이용에 도움이 될만한 <br/>자주 묻는 질문을 모았습니다.</p>
+			</div>
+		</div>
 		<div id="wrap">
-		<div id="boardTitle">
-			<p class="subTit">student</p>
-			<h2>자주묻는 질문</h2>
-			<p class="dashLine"><img src="../include/images/line.png" alt="line"/></p>
-			<p class="boardInfo">그린아카데미 사이트 이용에 도움이 될만한 <br/>자주 묻는 질문을 모았습니다.</p>
-		</div>
-		<div id="searchBox">
-			<select name="" id="">
-				<option value="제목">제목
-				<option value="내용">내용
-			</select>
-			<input type="text" name="searchText" id="searchText" class="guideText" value="검색어를 입력해주세요."/>
-			<input type="image" src="../include/images/searchBtn.png" alt="searchBtn">
-		</div>
 		<div id="boardTab">
 			<div class="tabInfo fl">Academy Campus</div>
 			<img class="fl" src="../include/images/doubleArrowR.png" alt="doubleArrow"/>
@@ -63,9 +56,20 @@
 				</ul>
 			</div>
 		</div>
+		<div id="searchBox">
+			<form action="search_result.php" method="get" class="searcharea cf">
+				<select name="catgo">
+					<option value="subject">제목</option>
+					<option value="content">내용</option>
+				</select>
+				<input type="text" name="search" required="required" placeholder="검색어를 입력해주세요."/>
+				<input type="image" src="../include/images/searchBtn.png" alt="searchBtn">
+			</form>
+		</div>
+
 			<div id="qnaContent" class="cf">
 			</div>
-		<div id="pageNum">
+<!-- 		<div id="pageNum">
 			<ul>
 				<li class="pageImg1"><a href="#"><img src="../include/images/doubleArrowL.png" alt="doubleArrowL"/></a></li>
 				<li class="pageImg2"><a href="#"><img src="../include/images/ArrowL.png" alt="ArrowL.png"/></a></li>
@@ -83,7 +87,7 @@
 				<li class="pageImg4"><a href="#"><img src="../include/images/ArrowR.png" alt="ArrowR"/></a></li>
 			</ul>
 		</div>
-			<div id="quickMenu">
+ -->			<div id="quickMenu">
 				<ul>
 					<li class="fl"><a href="#">수강료 조회하기</a></li>
 					<li class="fl"><a href="#">국비지원 대상 조회</a></li>

@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/layout_menu.css"/>
 	<link rel="icon" sizes="16x16" href="../include/images/green_pavi_ori.gif">
 	<script src="../include/js/jquery-1.9.0.min.js"></script> 
-	<script src="../include/js/DB_springMove_fn.js"></script>	
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
 	<script src="../include/js/menuActive.js"></script> 
@@ -24,11 +23,13 @@
 		<?php include "../include/header.php";?>
 	</header>
 	<section>
-		<div id="boardTitle">
-			<p class="subTit">student</p>
-			<h2>수강생게시판</h2>
-			<p class="dashLine"><img src="images/line.png" alt="line"/></p>
-			<p class="boardInfo">그린아카데미 수강생이 소통하는 곳입니다.</p>
+		<div class="titleWrap">
+			<div id="boardTitle">
+				<p class="subTit">student</p>
+				<h2>수강생게시판</h2>
+				<p class="dashLine"><img src="images/line.png" alt="line"/></p>
+				<p class="boardInfo">그린아카데미 수강생이 소통하는 곳입니다.</p>
+			</div>
 		</div>
 		<div id="boardTab">
 			<div class="tabInfo fl">Academy Campus</div>
@@ -64,162 +65,131 @@
 				</ul>
 			</div>
 		</div>
+		<div id="searchBox">
+			<form action="search_result.php" method="get" class="searcharea cf">
+				<select name="catgo">
+					<option value="subject">제목</option>
+					<option value="name">글쓴이</option>
+					<option value="content">내용</option>
+				</select>
+				<input type="text" name="search" required="required" placeholder="검색어를 입력해주세요."/>
+				<input type="image" src="../include/images/searchBtn.png" alt="searchBtn">
+			</form>
+		</div>
 		<div id="boardContent">
 			<div class="first fl cf">
 				<div class="num fl">번호</div>
 				<div class="cam fl"> 구분</div>
 				<div class="Tit fl">제목</div>
 				<div class="wri fl">글쓴이</div>
+				<div class="file fl">첨부파일</div>
 				<div class="dat fl">작성일</div>
+				<div class="hit fl">조회수</div>
 			</div>
- 			<div class="normal hot">
-				<div class="num fl"><span>HOT!</span></div>
-				<div class="cam fl">공통</div>
-				<div class="tit fl">9월 국가기간 전략산업 100% 무료지원 교육</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal hot">
-				<div class="num fl"><span>HOT!</span></div>
-				<div class="cam fl">공통</div>
-				<div class="tit fl">9월 국가기간전략산업,구직자 과정 개강안내</div>
-				<div class="wri fl">이**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal hot">
-				<div class="num fl"><span>HOT!</span></div>
-				<div class="cam fl">공통</div>
-				<div class="tit fl">9월 국민내일배움카드제 개강일정 안내</div>
-				<div class="wri fl">박**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
-			<div class="normal hot">
-				<div class="num fl"><span>HOT!</span></div>
-				<div class="cam fl">공통</div>
-				<div class="tit fl">21년 09월 ~ 21년 10월 실업자 국비지원 개강 공지</div>
-				<div class="wri fl">서**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
-			<div class="normal hot">
-				<div class="num fl"><span>HOT!</span></div>
-				<div class="cam fl">공통</div>
-				<div class="tit fl">그린이 쏜다!~ 열심히 공부하는 학생들을 위한 밥차이벤트</div>
-				<div class="wri fl">오**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1724</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">도**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1723</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">변**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1722</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">차**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1721</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">심**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1720</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1719</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1718</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1717</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1716</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1715</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1714</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
- 			<div class="normal">
-				<div class="num fl">1713</div>
-				<div class="cam fl">안양캠퍼스</div>
-				<div class="tit fl">2021년 내일배움카드 개강일정 안내</div>
-				<div class="wri fl">김**</div>
-				<div class="dat fl">2021-09-03</div>
-			</div>
+<?php
+	if (isset($_GET["page"]))
+		$page = $_GET["page"];
+	else
+		$page = 1;
 
-		</div>x
-		<div id="pageNum">
-			<ul>
-				<li class="pageImg1"><a href="#"><img src="../include/images/doubleArrowL.png" alt="doubleArrowL"/></a></li>
-				<li class="pageImg2"><a href="#"><img src="../include/images/ArrowL.png" alt="ArrowL.png"/></a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">6</a></li>
-				<li class="active"><a href="#">7</a></li>
-				<li><a href="#">8</a></li>
-				<li><a href="#">9</a></li>
-				<li><a href="#">10</a></li>
-				<li class="pageImg3"><a href="#"><img src="../include/images/doubleArrowR.png" alt="doubleArrowR"/></a></li>
-				<li class="pageImg4"><a href="#"><img src="../include/images/ArrowR.png" alt="ArrowR"/></a></li>
-			</ul>
-		</div>
-		<div id="searchBox">
-			<select name="" id="">
-				<option value="캠퍼스">캠퍼스
-				<option value="글쓴이">글쓴이
-				<option value="제목">제목
-				<option value="날짜">날짜
-			</select>
-			<input type="text" name="searchText" id="searchText" class="guideText" value="검색어를 입력해주세요."/>
-			<input type="image" src="../include/images/searchBtn.png" alt="searchBtn">
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
+	$sql = "select * from board order by num desc";
+	$result = mysqli_query($con, $sql);
+	$total_record = mysqli_num_rows($result); // 전체 글 수
+
+	$scale = 10;
+
+	// 전체 페이지 수($total_page) 계산, total_record = 11로 가정하고 계산
+	if ($total_record % $scale == 0)     
+		$total_page = floor($total_record/$scale);      
+	else
+		$total_page = floor($total_record/$scale) + 1; 
+ 
+	// 표시할 페이지($page)에 따라 $start 계산  
+	$start = ($page - 1) * $scale;      
+
+	$number = $total_record - $start;
+
+	for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)
+	{
+		mysqli_data_seek($result, $i);
+		// 가져올 레코드로 위치(포인터) 이동
+		$row = mysqli_fetch_array($result);
+		// 하나의 레코드 가져오기
+		$num         = $row["num"];
+		$id          = $row["id"];
+		$name        = $row["name"];
+		$subject     = $row["subject"];
+		$regist_day  = $row["regist_day"];
+		$hit         = $row["hit"];
+		if ($row["file_name"])
+			$file_image = "<img src='../include/images/file.gif'>";
+		else
+			$file_image = " ";
+?>
+			<li class="cf">
+				<div class="num"><?=$number?></div>
+				<div class="cam fl">공통</div>
+				<div class="tit"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></div>
+				<div class="wri"><?=$name?></div>
+				<div class="file"><?=$file_image?></div>
+				<div class="dat"><?=$regist_day?></div>
+				<div class="hit"><?=$hit?></div>
+			</li>	
+<?php
+		$number--;
+	}
+	mysqli_close($con);
+?>
+		</ul>
+		<ul id="pageNum" class="cf"> 	
+<?php
+	if ($total_page>=2 && $page >= 2)	
+	{
+		$new_page = $page-1;
+		echo "<li> <a href='index.php?page=$new_page'>◀ 이전</a> </li>";
+	}		
+	else 
+		echo "<li>&nbsp;</li>";
+
+	// 게시판 목록 하단에 페이지 링크 번호 출력
+	for ($i=1; $i<=$total_page; $i++)
+	{
+		if ($page == $i)     // 현재 페이지 번호 링크 안함
+		{
+			echo "<li class='active'>$i</li>";
+		}
+		else
+		{
+			echo "<li> <a href='index.php?page=$i'> $i </a> <li>";
+		}
+	}
+
+	if ($total_page>=2 && $page != $total_page)		
+	{
+		$new_page = $page+1;	
+		echo "<li> <a href='index.php?page=$new_page'>다음 ▶</a> </li>";
+	}
+	else 
+		echo "<li>&nbsp;</li>";
+?>
+		</ul> <!-- page -->	    	
+		<ul class="buttons">
+			<li><button onclick="location.href='index.php'">목록</button></li>
+			<li>
+<?php 
+	if($userid) {
+?>
+				<button onclick="location.href='board_form.php'">글쓰기</button>
+<?php
+	} else {
+?>
+				<a href="javascript:alert('로그인 후 이용해 주세요!')"><button>글쓰기</button></a>
+<?php
+	}
+?>
+			</li>
+		</ul>
 		</div>
 	</section>
 	

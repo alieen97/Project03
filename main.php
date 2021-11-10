@@ -73,27 +73,27 @@
 						</li>
 
 					</ul>
+					<div id="mainNotice" class="cf">
+						<div class="callSet cf">
+							<ul>
+								<li class="callNum fr">1588.9780</li>
+								<li class="callTime fr">평일 09:00~22:30 | 토요일 09:00~18:30</li>
+							</ul>
+						</div>
+						<div class="notice cf">
+							<span class="fl">NOTICE</span>
+							<div class="cycleSec fl cf">
+								<p class="fl" style="top:0;"><a href="#">이달의 추천과정</a></p>
+								<p class="fl"><a href="#">자격증 취득부터 취업까지</a></p>
+								<p class="fl"><a href="#">[강남점] 09월~10월 일반/실업자/재직자교육과정 개강안내</a></p>
+							</div>
+							<div class="noArrowSet cf">
+								<p><a href="#" class="prev"><img src="include/images/arrowTop.PNG" width="22px" height="17px;" alt="topArrow"/></a></p>
+								<p><a href="#" class="next"><img src="include/images/arrowBot.PNG" width="22px" height="17px;" alt="bottomArrow"/></a></p>
+							</div>
+						</div>
+					</div><!-- id="mainNotice" -->
 				</div><!-- id="quickIcon" -->
-				<div id="mainNotice" class="cf">
-					<div class="callSet cf">
-						<ul>
-							<li class="callNum fr">1588.9780</li>
-							<li class="callTime fr">평일 09:00~22:30 | 토요일 09:00~18:30</li>
-						</ul>
-					</div>
-					<div class="notice cf">
-						<span class="fl">NOTICE</span>
-						<div class="cycleSec fl cf">
-							<p class="fl" style="top:0;"><a href="#">이달의 추천과정</a></p>
-							<p class="fl"><a href="#">자격증 취득부터 취업까지</a></p>
-							<p class="fl"><a href="#">[강남점] 09월~10월 일반/실업자/재직자교육과정 개강안내</a></p>
-						</div>
-						<div class="noArrowSet cf">
-							<p><a href="#" class="prev"><img src="include/images/arrowTop.PNG" width="22px" height="17px;" alt="topArrow"/></a></p>
-							<p><a href="#" class="next"><img src="include/images/arrowBot.PNG" width="22px" height="17px;" alt="bottomArrow"/></a></p>
-						</div>
-					</div>
-				</div><!-- id="mainNotice" -->
 				<div id="quickSearch cf">
 					<div id="menuSearch" class="cf">
 						<div class="msTit fl">
